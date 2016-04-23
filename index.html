@@ -54,7 +54,7 @@
             Ответы на волнующие тебя вопросы. <br>
             Погружение в мощное женское состояние. 
             </p>
-            <img class="img-responsive coach" src="assets/img/women.png" alt="Women">
+            <img class="img-responsive coach" src="assets/img/women.jpg" alt="Women">
           </div>
           <div class="col-sm-4 text-center">
             <h2 class="title-margin">О тренере</h2>
@@ -99,27 +99,27 @@
         </div>
       </div>
 
-      <form class="row">
+      <form class="row" id="application" action="application.php" method="POST" name="application">
 
         <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
           <div class="frm-group">
             <label for="last-name">Фамилия</label><br>
-            <input id="last-name" type="text" class="frm-control">
+            <input id="last-name" name="last-name" type="text" class="frm-control">
           </div>
 
           <div class="frm-group">
             <label for="name">Имя</label><br>
-            <input id="name" type="text" class="frm-control">
+            <input id="name" name="name" type="text" class="frm-control">
           </div>
 
           <div class="frm-group">
             <label for="phone">Телефон</label><br>
-            <input id="phone" type="text" class="frm-control">
+            <input id="phone" name="phone" type="text" class="frm-control">
           </div>
 
           <div class="frm-group">
             <label for="mail">E-mail</label><br>
-            <input id="mail" type="email" class="frm-control">
+            <input id="mail" name="mail" type="email" class="frm-control">
           </div>
           
           <button type="sumbit" class="btn-submit">Отправить</button>
@@ -140,6 +140,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Site Sripts -->
   <script src="assets/js/functions.js"></script>
+  <script src="assets/js/jquery.validate.min.js"></script>
 
 </body>
 </html>
